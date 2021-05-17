@@ -2,8 +2,9 @@
 				<meta charset="uft-8">
 				<title>Códigos</title>
 <head>
-      <img src="./logo.png" height="50%" width="100%"></>
+      <img src="./logo.png" height="30%" width=100%"></>
       
+      <meta name="viewport" content= "initial-scale=1">
       
 </head>
 <body>
@@ -11,7 +12,7 @@
 <h1 align="center">CÓDIGOS DE ITENS</h1>
 
 
- <table id="id_da_tabela" height="50%" width="100%"> 
+ <table id="id_da_tabela" height="100%" width="100%"> 
  		<thead> 
  			<tr>
  				 <th>Produto</th> 
@@ -1241,24 +1242,33 @@
   </table>
 
 <link rel="stylesheet" href="cdn.datatable.net.1.11.3/css/jquery.dataTables.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script
+src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
 
  <script> 
  			
  				$(document).ready(function(){
       $('#id_da_tabela').DataTable({
+      
+      "pagingType": "full",
+
         	"language": {
                 "lengthMenu": "Mostrando _MENU_ registros por página",
                 "zeroRecords": "Nada encontrado",
                 "info": "Mostrando página _PAGE_ de _PAGES_",
                 "infoEmpty": "Nenhum registro disponível",
-                "infoFiltered": "(filtrado de _MAX_ registros no total)"
+                "infoFiltered": "(filtrado de _MAX_ registros no total)",
+                "search": "Pesquisar:  ",
+               
+
                 
             }
+            
         });
   });
- 
+  
  </script>
  		
  	</body>
