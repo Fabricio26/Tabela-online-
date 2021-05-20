@@ -12,7 +12,7 @@
 <h1 align="center">CÓDIGOS DE ITENS</h1>
 
 
- <table id="id_da_tabela" height="100%" width="100%"> 
+ <table id="id_da_tabela" class="row-border" width="100%"> 
  		<thead> 
  			<tr>
  				 <th>Produto</th> 
@@ -21,6 +21,26 @@
  		</thead>
    <tbody>
 
+<tr>
+               <td>MACHO M12</td>
+               <td>104752</td>
+</tr>
+<tr>
+               <td>MACHO M10</td>
+               <td>104751</td>
+</tr>
+<tr>
+               <td>MACHO M8</td>
+               <td>104750</td>
+</tr>
+<tr>
+               <td>MACHO M6</td>
+               <td>104749</td>
+</tr>
+<tr>
+               <td>MACHO M5</td>
+               <td>104748</td>
+</tr>
 <tr>
                <td>LUVA TRICOTADA PIGMENTADA</td>
                <td>950006724</td>
@@ -1241,17 +1261,19 @@
     </tbody>
   </table>
 
-<link rel="stylesheet" href="cdn.datatable.net.1.11.3/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="cdn.datatable.net.1.10.24/css/jquery.dataTables.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" 
+src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script
 src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
 
- <script> 
+ <script>
  			
  				$(document).ready(function(){
       $('#id_da_tabela').DataTable({
-      
+   "dom": '<"top"f>t<"bottom"ilp>',
+
       "pagingType": "full",
 
         	"language": {
@@ -1261,7 +1283,7 @@ src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script
                 "infoEmpty": "Nenhum registro disponível",
                 "infoFiltered": "(filtrado de _MAX_ registros no total)",
                 "search": "Pesquisar:  ",
-               
+                "first": "Primeiro",
 
                 
             }
